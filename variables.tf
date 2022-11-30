@@ -53,6 +53,12 @@ variable "pod_cidr_name" {
   type        = string
 }
 
+variable "gcp_service_account" {
+  description = "The GCP service account to use when running nodes. If empty, a new one will be created automatically."
+  type        = string
+  default     = ""
+}
+
 variable "service_cidr_name" {
   description = "The name of the secondary CIDR used for services. Must be created separately as a secondary CIDR on the subnet used for the cluster."
   type        = string

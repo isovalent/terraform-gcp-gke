@@ -17,6 +17,7 @@ module "main" {
   version = "23.1.0"
 
   cluster_resource_labels    = var.tags
+  create_service_account     = var.gcp_service_account == "" ? true : false
   ip_range_pods              = var.pod_cidr_name
   ip_range_services          = var.service_cidr_name
   horizontal_pod_autoscaling = true
@@ -48,6 +49,7 @@ module "main" {
       min_count          = node_pool.min_nodes
       name               = key
       preemptible        = node_pool.preemptible
+      service_account    = var.gcp_service_account
     }
   ]
 

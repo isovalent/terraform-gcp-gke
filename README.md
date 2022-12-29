@@ -21,7 +21,7 @@ An opinionated Terraform module that can be used to create and manage a GKE clus
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_main"></a> [main](#module\_main) | terraform-google-modules/kubernetes-engine/google | 23.1.0 |
+| <a name="module_main"></a> [main](#module\_main) | terraform-google-modules/kubernetes-engine/google | 24.1.0 |
 
 ## Resources
 

@@ -14,7 +14,7 @@
 
 module "main" {
   source  = "terraform-google-modules/kubernetes-engine/google"
-  version = "23.1.0"
+  version = "24.1.0"
 
   cluster_resource_labels    = var.tags
   ip_range_pods              = var.pod_cidr_name

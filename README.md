@@ -15,13 +15,13 @@ An opinionated Terraform module that can be used to create and manage a GKE clus
 
 | Name | Version |
 |------|---------|
-| <a name="provider_null"></a> [null](#provider\_null) | 3.1.1 |
+| <a name="provider_null"></a> [null](#provider\_null) | >= 3.1.1 |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_main"></a> [main](#module\_main) | terraform-google-modules/kubernetes-engine/google | 24.1.0 |
+| <a name="module_main"></a> [main](#module\_main) | terraform-google-modules/kubernetes-engine/google | 28.0.0 |
 
 ## Resources
 

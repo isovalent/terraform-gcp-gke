@@ -80,3 +80,13 @@ resource "null_resource" "kubeconfig" {
     }
   }
 }
+
+data "external" "external_ips" {
+  program = ["bash", "-c", "gcloud compute instances list --filter=\"name~${var.name}\" --format=\"json(networkInterfaces[0].accessConfigs[0].natIP)\" |  jq 'to_entries | map({key: (.key|tostring), value: (.value|tostring)}) | from_entries'"]
+}
+
+locals {
+  external_ips = [
+    for value in data.external.external_ips.result : jsondecode(value).networkInterfaces[0].accessConfigs[0].natIP
+  ]
+}

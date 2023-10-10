@@ -26,5 +26,5 @@ output "path_to_kubeconfig_file" {
 }
 
 output "zones" {
-  value = "module.main.zones"
+  value = module.main.zones
 }

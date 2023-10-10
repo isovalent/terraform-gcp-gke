@@ -12,6 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+output "external_ips" {
+  value       = local.external_ips
+  description = "External IPs of the nodes"
+}
+
 output "id" {
   value = module.main.cluster_id
 }

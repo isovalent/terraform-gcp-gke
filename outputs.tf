@@ -19,3 +19,7 @@ output "id" {
 output "path_to_kubeconfig_file" {
   value = local.path_to_kubeconfig_file
 }
+
+output "zones" {
+  value = "module.main.zones"
+}

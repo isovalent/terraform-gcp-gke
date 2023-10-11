@@ -82,6 +82,9 @@ resource "null_resource" "kubeconfig" {
 }
 
 data "external" "external_ips" {
+  depends_on = [
+    module.main
+  ]
   program = ["bash", "-c", "gcloud compute instances list --filter=\"name~${var.name}\" --format=\"json(networkInterfaces[0].accessConfigs[0].natIP)\" |  jq 'to_entries | map({key: (.key|tostring), value: (.value|tostring)}) | from_entries'"]
 }
 

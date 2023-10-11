@@ -2,6 +2,11 @@
 
 An opinionated Terraform module that can be used to create and manage a GKE cluster in Google Cloud Platform in a simplified way.
 
+## External dependencies
+
+This module depends on the following external tools:
+- [gcloud](https://cloud.google.com/sdk/gcloud)
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 

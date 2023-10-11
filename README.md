@@ -15,6 +15,7 @@ An opinionated Terraform module that can be used to create and manage a GKE clus
 
 | Name | Version |
 |------|---------|
+| <a name="provider_external"></a> [external](#provider\_external) | n/a |
 | <a name="provider_null"></a> [null](#provider\_null) | >= 3.1.1 |
 
 ## Modules
@@ -28,6 +29,7 @@ An opinionated Terraform module that can be used to create and manage a GKE clus
 | Name | Type |
 |------|------|
 | [null_resource.kubeconfig](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
+| [external_external.external_ips](https://registry.terraform.io/providers/hashicorp/external/latest/docs/data-sources/external) | data source |
 
 ## Inputs
 
@@ -50,6 +52,7 @@ An opinionated Terraform module that can be used to create and manage a GKE clus
 
 | Name | Description |
 |------|-------------|
+| <a name="output_external_ips"></a> [external\_ips](#output\_external\_ips) | External IPs of the nodes |
 | <a name="output_id"></a> [id](#output\_id) | n/a |
 | <a name="output_path_to_kubeconfig_file"></a> [path\_to\_kubeconfig\_file](#output\_path\_to\_kubeconfig\_file) | n/a |
 | <a name="output_zones"></a> [zones](#output\_zones) | n/a |

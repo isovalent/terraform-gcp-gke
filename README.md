@@ -27,7 +27,7 @@ This module depends on the following external tools:
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_main"></a> [main](#module\_main) | terraform-google-modules/kubernetes-engine/google | 28.0.0 |
+| <a name="module_main"></a> [main](#module\_main) | terraform-google-modules/kubernetes-engine/google | 30.0.0 |
 
 ## Resources
 
@@ -40,6 +40,7 @@ This module depends on the following external tools:
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_additional_ip_range_pods"></a> [additional\_ip\_range\_pods](#input\_additional\_ip\_range\_pods) | additional\_ip\_range\_pods | `list(any)` | n/a | yes |
 | <a name="input_enable_workload_identity"></a> [enable\_workload\_identity](#input\_enable\_workload\_identity) | Whether to enable workload identity. If enabled, 'netd' is deployed by GKE. | `bool` | `false` | no |
 | <a name="input_kubernetes_version"></a> [kubernetes\_version](#input\_kubernetes\_version) | The version of Kubernetes/GKE to use. | `string` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | The name of the GKE cluster. | `string` | n/a | yes |

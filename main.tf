@@ -14,11 +14,12 @@
 
 module "main" {
   source  = "terraform-google-modules/kubernetes-engine/google"
-  version = "28.0.0"
+  version = "30.0.0"
 
   cluster_resource_labels    = var.tags
   ip_range_pods              = var.pod_cidr_name
   ip_range_services          = var.service_cidr_name
+  additional_ip_range_pods   = var.additional_ip_range_pods
   horizontal_pod_autoscaling = true
   http_load_balancing        = true
   identity_namespace         = var.enable_workload_identity ? "enabled" : null

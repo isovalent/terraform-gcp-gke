@@ -18,6 +18,11 @@ variable "enable_workload_identity" {
   type        = bool
 }
 
+variable "additional_ip_range_pods" {
+  description = "additional_ip_range_pods"
+  type        = list(any)
+}
+
 variable "kubernetes_version" {
   description = "The version of Kubernetes/GKE to use."
   type        = string

@@ -21,6 +21,7 @@ variable "enable_workload_identity" {
 variable "additional_ip_range_pods" {
   description = "additional_ip_range_pods"
   type        = list(any)
+  default     = []
 }
 
 variable "kubernetes_version" {

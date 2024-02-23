@@ -94,3 +94,11 @@ variable "vpc_id" {
   description = "The ID of the VPC in which to create the GKE cluster."
   type        = string
 }
+
+variable "deletion_protection" {
+  description = "Whether to enable deletion protection for the GKE cluster."
+  type        = bool
+  default     = false
+}
+
+

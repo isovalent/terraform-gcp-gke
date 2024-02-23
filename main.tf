@@ -49,6 +49,7 @@ module "main" {
       min_count          = node_pool.min_nodes
       name               = key
       preemptible        = node_pool.preemptible
+      pod_range          = node_pool.pod_range
     }
   ]
 

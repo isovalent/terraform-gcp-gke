@@ -46,6 +46,7 @@ variable "node_pools" {
     preemptible      = bool
     root_volume_size = number
     root_volume_type = string
+    pod_range        = string
     taints = list(object({
       effect = string
       key    = string

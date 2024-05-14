@@ -27,7 +27,7 @@ This module depends on the following external tools:
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_main"></a> [main](#module\_main) | terraform-google-modules/kubernetes-engine/google | 30.0.0 |
+| <a name="module_main"></a> [main](#module\_main) | terraform-google-modules/kubernetes-engine/google | 30.3.0 |
 
 ## Resources
 

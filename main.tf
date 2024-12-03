@@ -34,6 +34,7 @@ module "main" {
   region                     = var.region
   subnetwork                 = var.subnet_id
   zones                      = []
+  deletion_protection        = var.deletion_protection
 
   node_pools = [
     for key, node_pool in var.node_pools :

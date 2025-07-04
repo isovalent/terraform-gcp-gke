@@ -102,4 +102,14 @@ variable "deletion_protection" {
   default     = false
 }
 
+variable "create_service_account" {
+  description = "Whether to create a service account for the GKE cluster."
+  type        = bool
+  default     = true
+}
 
+variable "service_account" {
+  description = "The service account to use for the GKE cluster. If not set, a new service account will be created."
+  type        = string
+  default     = null
+}

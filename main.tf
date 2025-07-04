@@ -35,6 +35,9 @@ module "main" {
   subnetwork                 = var.subnet_id
   zones                      = []
   deletion_protection        = var.deletion_protection
+  create_service_account     = var.create_service_account
+  service_account            = var.service_account != "" ? var.service_account : null
+
 
   node_pools = [
     for key, node_pool in var.node_pools :

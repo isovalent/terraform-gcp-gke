@@ -37,6 +37,7 @@ module "main" {
   deletion_protection        = var.deletion_protection
   create_service_account     = var.create_service_account
   service_account            = var.service_account != "" ? var.service_account : null
+  master_authorized_networks = length(var.master_authorized_networks) > 0 ? var.master_authorized_networks : null
 
 
   node_pools = [

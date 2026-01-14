@@ -113,3 +113,9 @@ variable "service_account" {
   type        = string
   default     = null
 }
+
+variable "master_authorized_networks" {
+  description = "The master authorized networks configuration for the GKE cluster in CIDR notation."
+  type        = list(object({ cidr_block = string, display_name = string }))
+  default     = []
+}
